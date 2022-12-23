@@ -25,19 +25,19 @@ const CartProvider = (props) => {
     defaultCartState
   );
 
-  const addItemFromCartHandler = (item) => {
+  const addItemToCartHandler = (item) => {
     dispatchCartAction({ type: "ADD", item: item });
   };
 
-  const removetemFromCartHandler = (id) => {
+  const removeItemFromCartHandler = (id) => {
     dispatchCartAction({ type: "REMOVE", id: id });
   };
 
   const cartContext = {
     items: cartState.items,
     totalAmount: cartState.totalAmount,
-    addItem: addItemFromCartHandler,
-    removeItem: removetemFromCartHandler,
+    addItem: addItemToCartHandler,
+    removeItem: removeItemFromCartHandler,
   };
 
   return (
