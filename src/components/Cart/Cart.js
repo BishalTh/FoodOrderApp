@@ -13,7 +13,7 @@ const Cart = (props) => {
   const cartItemRemoveHandler = (id) => {};
 
   const cartItemAddHandler = (item) => {};
-
+//this is for the cart Iteams
   const cartItems = (
     <ul className={classes["cart-items"]}>
       {cartCtx.items.map((item) => (
